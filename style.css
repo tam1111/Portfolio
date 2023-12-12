@@ -12,14 +12,14 @@ body{
     grid-template-rows: auto;
     margin: 0;
     grid-template-areas: 
-    "logo nav nav nav nav "
+    "nav nav nav nav nav "
     "main main main main"
     "main main main main";
 }
 
 .container{
     grid-area: "nav";
-    grid-template-columns:auto auto auto auto ;
+    grid-template-columns:auto auto auto auto auto ;
 }
 .navbar {
     height: 2.13cm;
@@ -41,13 +41,13 @@ nav a{
 
 .logo{
         display: grid;
-        position: fixed;
-        grid-area: "logo";
+        position: absolute;
+        grid-area: "nav";
         grid-template-columns: auto;
         width: 20em;
         height: 20em;
         float: left;
-        top: 0;
+        top: 1em;
         left: 0;
         margin: 0;
     }
@@ -63,5 +63,5 @@ nav a{
         background-color: #008080;
         padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: white;
     }
